@@ -12,28 +12,38 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background: rgb(124, 26, 170);
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
+
     .logo {
-      max-width: 120px; /* Adjust as needed */
-      max-height: 80px; /* ✅ Ensure proper resizing */
+      max-width: 120px;
+      max-height: 80px;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 1rem;
     }
+
     h1 {
       font-size: 2.5rem;
-      margin: 0;
+      margin-bottom: 0.5rem;
     }
+
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
     .container {
-      padding: 2rem;
+      padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
       text-align: center;
     }
+
     .btn {
       display: inline-block;
       margin-top: 1.5rem;
@@ -44,10 +54,13 @@
       border-radius: 6px;
       font-weight: bold;
       font-size: 1rem;
+      transition: background 0.3s ease;
     }
+
     .btn:hover {
       background: darkmagenta;
     }
+
     footer {
       background: #f4f4f4;
       padding: 1.5rem;
@@ -55,6 +68,7 @@
       color: #555;
       font-size: 0.9rem;
     }
+
     footer a {
       color: magenta;
       text-decoration: none;
@@ -64,15 +78,15 @@
 </head>
 <body>
   <header>
-    <img src="youtufy-app/assets/logo.jpeg" alt="YouTufy Logo (Check if missing)" class="logo" />
+    <img src="youtufy-app/assets/logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
     <h1>Welcome to YouTufy</h1>
-    <p>Your YouTube Subscriptions Dashboard</p>
+    <p class="tagline">Your YouTube Subscriptions Dashboard</p>
   </header>
 
-  <div class="container">
+  <main class="container">
     <p>Click below to launch the app:</p>
     <a class="btn" href="https://youtufy-one.streamlit.app/">🚀 Launch YouTufy App</a>
-  </div>
+  </main>
 
   <footer>
     &copy; 2025 YouTufy &nbsp;|&nbsp;
