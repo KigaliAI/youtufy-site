@@ -16,13 +16,13 @@
     header {
       background: rgb(124, 26, 170);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem 2rem;
       text-align: center;
     }
 
     .logo {
-      max-width: 120px;  /* ✅ Ensures proper scaling */
-      height: auto;  /* ✅ Allows flexible resizing */
+      max-width: 100px;
+      max-height: 80px;
       display: block;
       margin: 0 auto 1rem;
     }
@@ -34,7 +34,7 @@
 
     .tagline {
       font-size: 1.2rem;
-      margin-top: 0;
+      margin: 0;
     }
 
     .container {
@@ -78,7 +78,8 @@
 </head>
 <body>
   <header>
-    <img src="logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
+    <!-- ✅ Correct Logo Position -->
+    <img src="youtufy-app/assets/logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
     <h1>Welcome to YouTufy</h1>
     <p class="tagline">Your YouTube Subscriptions Dashboard</p>
   </header>
