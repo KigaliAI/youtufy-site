@@ -21,8 +21,8 @@
     }
 
     .logo {
-      max-width: 120px;
-      max-height: 80px;
+      max-width: 120px;  /* ✅ Ensures proper scaling */
+      height: auto;  /* ✅ Allows flexible resizing */
       display: block;
       margin: 0 auto 1rem;
     }
@@ -78,7 +78,7 @@
 </head>
 <body>
   <header>
-    <img src="youtufy-app/assets/logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
+    <img src="logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
     <h1>Welcome to YouTufy</h1>
     <p class="tagline">Your YouTube Subscriptions Dashboard</p>
   </header>
