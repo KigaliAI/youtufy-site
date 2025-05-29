@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>YouTufy – YouTube Subscriptions System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background: white;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: rgb(124, 26, 170);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        .logo {
-            width: auto;
-            max-width: 150px;
-            height: auto;
-            max-height: 120px;
-            display: block;
-            margin: 0 auto 1rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .tagline {
-            font-size: 1.2rem;
-            margin: 0;
-        }
-        .container {
-            padding: 2rem 1rem;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-        h2 {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: magenta;
-        }
-        p {
-            font-size: 1rem;
-            color: magenta;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            background: magenta;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: darkmagenta;
-        }
-        footer {
-            background: #f4f4f4;
-            padding: 1.5rem;
-            text-align: center;
-            color: #555;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: magenta;
-            text-decoration: none;
-            margin: 0 0.5rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>YouTufy – YouTube Subscriptions System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: rgb(124, 26, 170);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .logo {
+      max-width: 150px;
+      max-height: 120px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .container {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: magenta;
+    }
+    p {
+      font-size: 1rem;
+      color: magenta;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: magenta;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: darkmagenta;
+    }
+    footer {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: magenta;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
-        <h1>Welcome to YouTufy</h1>
-        <p class="tagline">Your YouTube Subscriptions Dashboard</p>
-    </header>
-    <main class="container">
-        <h2>What YouTufy does and how it helps users manage their YouTube subscriptions</h2>
-        <p>
-            YouTufy is a subscription management tool designed to help users keep track of their favorite YouTube channels. 
-            By securely accessing your subscriptions, YouTufy provides valuable insights, including subscriber counts, video uploads, and engagement metrics.  
-            This allows you to effortlessly monitor the latest content without collecting or storing personal data.
-        </p>
+  <header>
+    <img src="static/logo.png" alt="YouTufy Logo" class="logo" />
+    <h1>Welcome to YouTufy</h1>
+    <p class="tagline">Your YouTube Subscriptions Dashboard</p>
+  </header>
 
-        <p>Click below to launch the app:</p>
-        <a class="btn" href="https://youtufy-one.streamlit.app/">🚀 Launch YouTufy App</a>
-    </main>
-    <footer>
-        &copy; 2025 YouTufy &nbsp;|&nbsp; <a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a> <a href="cookie.html">Cookies</a>
-    </footer>
+  <main class="container">
+    <h2>Why YouTufy?</h2>
+    <p>
+      YouTufy is a subscription management tool designed to help you keep track of your favorite YouTube channels.
+      By securely accessing your subscriptions, YouTufy provides valuable insights such as subscriber counts, video uploads,
+      and engagement metrics—all without storing your private data.
+    </p>
+
+    <p>🔒 Your data is protected · Access granted via Google OAuth (<code>youtube.readonly</code>)</p>
+    <p>🛡️ We request <code>youtube.readonly</code> permission to access your subscriptions securely.</p>
+
+    <p>✅ Choose one of the login methods:</p>
+    <p>
+      <a class="btn" href="/google_login">🔐 Sign in with Google</a><br><br>
+      <a href="/login"><strong>✉️ Login (Email & Password)</strong></a> | 
+      <a href="/register"><strong>📝 Register</strong></a>
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 YouTufy |
+      <a href="privacy.html" target="_blank">Privacy Policy</a> |
+      <a href="terms.html" target="_blank">Terms of Service</a> |
+      <a href="cookie.html" target="_blank">Cookies</a>
+    </p>
+  </footer>
 </body>
 </html>
