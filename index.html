@@ -19,8 +19,8 @@
       text-align: center;
     }
     .logo {
-      max-width: 150px;
-      max-height: 120px;
+      max-width: 120px;
+      height: auto;
       display: block;
       margin: 0 auto 1rem;
     }
@@ -49,7 +49,7 @@
     }
     .btn {
       display: inline-block;
-      margin-top: 1.5rem;
+      margin: 0.5rem 0.5rem;
       background: magenta;
       color: white;
       padding: 0.75rem 1.5rem;
@@ -78,7 +78,7 @@
 </head>
 <body>
   <header>
-    <img src="static/logo.png" alt="YouTufy Logo" class="logo" />
+    <img src="logo.jpeg" alt="YouTufy Logo" class="logo" onerror="this.style.display='none';" />
     <h1>Welcome to YouTufy</h1>
     <p class="tagline">Your YouTube Subscriptions Dashboard</p>
   </header>
@@ -95,11 +95,12 @@
     <p>🛡️ We request <code>youtube.readonly</code> permission to access your subscriptions securely.</p>
 
     <p>✅ Choose one of the login methods:</p>
-    <p>
-      <a class="btn" href="/google_login">🔐 Sign in with Google</a><br><br>
-      <a href="/login"><strong>✉️ Login (Email & Password)</strong></a> | 
-      <a href="/register"><strong>📝 Register</strong></a>
-    </p>
+
+    <div>
+      <a class="btn" href="/google_login">🔐 Sign in with Google</a>
+      <a class="btn" href="https://www.youtufy.com/login">✉️ Login (Email & Password)</a>
+      <a class="btn" href="https://www.youtufy.com/register">📝 Register</a>
+    </div>
   </main>
 
   <footer>
